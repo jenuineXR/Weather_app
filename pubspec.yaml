@@ -1,0 +1,46 @@
+name: weather_app
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For making API calls to the weather service
+  http: ^1.2.1
+
+  # For Firebase Core setup (required for all Firebase services)
+  firebase_core: ^2.30.1
+
+  # For Firebase Authentication
+  firebase_auth: ^4.17.5
+
+  # For Google Sign-In functionality
+  google_sign_in: ^6.2.1
+
+  # For Firestore Database (to store user favorites)
+  cloud_firestore: ^4.15.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+# Flutter-specific configuration
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+# Launcher icon configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
